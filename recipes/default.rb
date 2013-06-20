@@ -59,6 +59,7 @@ unless node[:passenger][:rbenv][:enabled]
 else
   rbenv_gem "passenger" do
     rbenv_version node[:passenger][:rbenv][:version]
+    options("--prerelease") if node[:passenger][:prerelease]
     version node[:passenger][:version] if node[:passenger][:version]
   end
 
