@@ -1,6 +1,6 @@
 
 default[:passenger][:version]     = "4.0.5"
-default[:passenger][:prerelease]  = true
+default[:passenger][:prerelease]  = false
 default[:passenger][:max_pool_size] = "6"
 default[:passenger][:root_path]   = "#{languages[:ruby][:gems_dir]}/gems/passenger-#{passenger[:version]}"
 default[:passenger][:module_path] = "#{passenger[:root_path]}/ext/apache2/mod_passenger.so"
